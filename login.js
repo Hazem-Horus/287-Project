@@ -20,8 +20,12 @@ function authenticate() {
                 return;
         }
     }
-    alert("Wrong pass");
+    alert("Invalid username or password \nLogin unsuccessful");
     document.getElementById("login-form").reset();
+}
+
+function signUp(){
+    window.location.assign("signup.html");
 }
 
 //______________________EVENT LISTENERS___________________________

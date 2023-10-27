@@ -10,8 +10,8 @@ const form = document.getElementById("login-form");
 function authenticate() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    let user_search = providerButton.classList.contains('login-button-on') ? valid_usernames_provider : valid_usernames_clients;
-    let pass_search = providerButton.classList.contains('login-button-on') ? valid_passwords_provider : valid_passwords_clients;
+    let user_search = providerButton.classList.contains('choice-button-on') ? valid_usernames_provider : valid_usernames_clients;
+    let pass_search = providerButton.classList.contains('choice-button-on') ? valid_passwords_provider : valid_passwords_clients;
 
     for (let i = 0; i < user_search.length; i++) {
         if (user_search[i] == username && pass_search[i] == password) {
@@ -31,11 +31,11 @@ function signUp(){
 //______________________EVENT LISTENERS___________________________
 
 providerButton.addEventListener('click', function () {
-    providerButton.classList.add('login-button-on');
-    clientsButton.classList.remove('login-button-on');
+    providerButton.classList.add('choice-button-on');
+    clientsButton.classList.remove('choice-button-on');
 
 });
 clientsButton.addEventListener('click', function () {
-    clientsButton.classList.add('login-button-on');
-    providerButton.classList.remove('login-button-on');
+    clientsButton.classList.add('choice-button-on');
+    providerButton.classList.remove('choice-button-on');
 });

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Software License Management </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Login</h1>
+        <form>
+            <!-- Username Input -->
+            <label for="username"> Username <br/> </label>
+            <input type="text" id="username" required> 
+            
+            <!-- Password Input -->
+            <label for="Password"> <br/> <br/> Password <br/> </label>
+            <input type="password" id="password" required>
+
+            <!-- Login Button -->
+            <p> </p>
+            <button type="submit"> Login </button>
+
+             <!-- Sign Up Button -->
+             <button type="submit"> Sign Up </button>
+
+        </form>
+
+    </div>
+    
+
+</body>
+
+</html>

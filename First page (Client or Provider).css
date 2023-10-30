@@ -1,0 +1,34 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.role-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 36px;
+    font-size: 15px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+body {
+    background-color: plum;
+    margin: 0;
+    padding: 0;
+}

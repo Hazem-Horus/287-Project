@@ -1,68 +1,46 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-<title> Client Dashboard </title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-    <header> 
+    <header>
         <div id="dashboard-content">
-        <h1> Welcome to your Dashboard </h1> 
+            <h1>Welcome to your Dashboard</h1>
         </div>
     </header>
 
-   <div class="container">
-
-    <nav class="sidebar">
-        <ul>
-            <li> <a href="#dashboard"> Dashboard </a> </li>
-            <li> <a href="#account"> Account </a> </li>
-            <li> <a href="#licenses"> Licenses </a> </li>
-
-            <!-- More can be added -->
-
-        </ul>
-    </nav>
-
-    <main>
-
-        <section class="content">
-
-            <div id="dashboard-content">
-                    
-                <h2>Dashboard</h2>
-                <p>This is the dashboard content.</p>
-
-            </div>
-
-            <div id="account-content" style="display: none;">
-
-                <h2> Account </h2>
-
-                <button id="edit-account"> Edit Account </button>
-                <button id="delete-account"> Delete Account </button>
-                <button id="logout"> Logout </button>
-
-            </div>
-
-            <div id="licenses-content" style="display: none;" >
-
-                <h2>License Information</h2>
-                <p>Your license details go here.</p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-   </div>
-
-   <script type="text/javascript" src="script.js"> </script>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#licenses">Licenses</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="content">
+                <div id="dashboard-content">
+                    <h2>Dashboard</h2>
+                    <p>This is the dashboard content.</p>
+                </div>
+                <div id="account-content" style="display: none;">
+                    <h2>Account</h2>
+                    <button id="edit-account">Edit Account</button>
+                    <button id="delete-account">Delete Account</button>
+                    <button id="logout">Logout</button>
+                </div>
+                <div id="licenses-content" style="display: none;">
+                    <h2>License Information</h2>
+                    <p>Your license details go here.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
 
 </html>

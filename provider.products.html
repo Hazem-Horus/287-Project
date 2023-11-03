@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Software Provider Page</title>
     <link rel="stylesheet" type="text/css" href="provider.product.css">
 </head>
+
 <body>
-    <h1>Software Provider Page</h1>
-    
+    <provider-header></provider-header>
     <label for="softwareSelect">Select Software:</label>
     <select id="softwareSelect">
         <option value="software1">Software 1</option>
@@ -17,15 +18,16 @@
     <table id="clientTable" style="display:none;">
         <thead>
             <tr>
-                <th>Client Name</th>
-                <th>Client email</th>
-                <th>Manage client permission</th>
+                <th class = "name">Client Name</th>
+                <th class = "email">Client email</th>
+                <th class = "permission">Manage client permission</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Client data will be inserted here based on the selection -->
         </tbody>
     </table>
-    <script src = "provider.products.js"></script>
+    <script src="provider.products.js"></script>
+    <script src="provider.elements.js"></script>
 </body>
+
 </html>

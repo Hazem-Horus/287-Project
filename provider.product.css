@@ -1,7 +1,7 @@
 th{
     text-align: left;
     padding-right: 10px;
-    width:33%px;
+    width:33%;
     border:1px solid black;
 }
 tr{
@@ -15,5 +15,47 @@ tbody{
 }
 table{
     border:1px solid black;
-    width: 80%;
+    width: 50%;
+}
+.permission{
+    width: 15%;
+}
+.name{
+    width:15%;
+}
+.email{
+    width:50%;
+}
+
+:root{
+    --green1 : rgb(0, 255, 0);
+}
+
+.nav-menu {
+    float: right;
+    margin-right: 100px;
+}
+.nav-menu-tab{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 100px;
+
+}
+.menu{
+    color:white;
+    background-color: var(--green1);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }

@@ -1,5 +1,8 @@
+/* HARD CODED ACCOUNTS FOR NOW */
 const valid_usernames_provider = ["employee1", "employee2"];
 const valid_passwords_provider = ["epass1", "epass2"];
+
+
 const valid_usernames_clients = ["client1", "client2"];
 const valid_passwords_clients = ["cpass1", "cpass2"];
 

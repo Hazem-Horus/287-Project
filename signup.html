@@ -20,17 +20,17 @@
 
             <div class = "names-container">
                 <div class="input-group">
-                    <input type="text" name="login-username" id="username" required>
+                    <input type="text" name="login-username" id="first-name" required>
                     <label for="login-username">First Name</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="login-password" id="password" required>
+                    <input type="text" name="login-password" id="last-name" required>
                     <label for="login-password">Last Name</label>
                 </div>
             </div>
 
             <div class="input-group">
-                <input type="email" name="login-password" id="password" required>
+                <input type="email" name="login-password" id="email" required>
                 <label for="login-password">Email Address:</label>
             </div>
             <div class="input-group">
@@ -42,9 +42,10 @@
                 <label for="login-password">Password</label>
             </div>
             <div class="input-group">
-                <input type="password" name="login-username" id="username" required>
+                <input type="password" name="login-username" id="reentered-password" required>
                 <label for="login-username">Re-enter Password</label>
             </div>
+            <input type="submit" value = "Create an account" class = "submit-btn" onclick="createAccount()" />
         </form>
     </div>
     <script src="signup.js"></script>

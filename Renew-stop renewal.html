@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Renew/stop Renew Licenses </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Renew or Stop Renewal</h1>
+    </header>
+
+    <div class="container">
+
+        <main>
+            <section class="content">
+                <form id="renew-license-form">
+                    <label for="serial-number">Serial Number:</label>
+                    <input type="text" id="serial-number" name="serial-number" required>
+
+                    <label for="renewal-status">Renewal Status:</label>
+                    <select id="renewal-status" name="renewal-status" required>
+                        <option value="renew">Renew</option>
+                        <option value="stop">Stop Renewal</option>
+                    </select>
+
+                    <p></p>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

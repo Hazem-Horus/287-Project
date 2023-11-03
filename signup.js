@@ -10,7 +10,9 @@ function createAccount(){
     var password = document.getElementById("password");
     var reentered_password = document.getElementById("reentered-password");
     var email = document.getElementById("email");
-
+}
+function returnLogin(){
+    window.location.assign("login.html");
 }
 
 

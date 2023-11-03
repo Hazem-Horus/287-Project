@@ -1,0 +1,19 @@
+th{
+    text-align: left;
+    padding-right: 10px;
+    width:33%px;
+    border:1px solid black;
+}
+tr{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}
+tbody{
+    border:1px solid black;
+}
+table{
+    border:1px solid black;
+    width: 80%;
+}

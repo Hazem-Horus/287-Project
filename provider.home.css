@@ -29,21 +29,31 @@
 .article1{
     padding-block: 100px;
     padding-inline: 50px;
-    background-color: aqua;
+    text-align: center;
+    background-color: rgb(188, 255, 255);
 }
-
+.article2{
+    padding-block: 100px;
+    padding-inline: 50px;
+    background-color: rgb(123, 221, 251);
+    height:500px;
+}
+a{
+    display:block;
+    text-decoration: none;
+}
+ul li a:hover{
+    color:red;
+}
 /* GENERAL */
 h2{
     padding-bottom: 20px;
-}
-p{
-    padding-left: 30px;
+
 }
 button{
     padding: 5px;
     padding-inline: 20px;
     margin-top: 10px;
-    margin-left: 25px;
     border: 0px;
     background: white;
     transition: 0.5s;

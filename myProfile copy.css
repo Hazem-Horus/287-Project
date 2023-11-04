@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: #2E7D32;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105%;
+}
+
+.nameOfWebsite {
+  font-size: 24px;
+}
+
+#navOptions a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#navOptions a:hover {
+  color: #64CCC5;
+}
+
+.btn-header {
+  text-align: end;
+}
+
+.btn-head a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button.btn-head {
+  border-radius: 50px;
+  background-color: #2E7D32;
+  margin: 7px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn-head:hover {
+  background-color: #64CCC5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.new-licenses {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.input-box {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+.subscribe {
+  margin: 20px 0;
+}
+
+.subscribe button {
+  background-color: #2E7D32;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+  background-color: #64CCC5;
+}
+

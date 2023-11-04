@@ -12,15 +12,15 @@ const clientSelect = document.getElementById("clientSelect");
 const softwareTable = document.getElementById("softwareTable");
 const clientData = {
     "client1": [
-        { name: "john", serialNumber : "19231jgnbvi219"}],
+        { name: "VSCode plus", serialNumber: "19231jgnbvi219" }],
 
     "client2": [
-        { name: "lightroom", serialNumber: "difjso2019jfzoi"},
-        { name: "photoshop", serialNumber: "sdifhjb932jzcv9"},
-        { name: "aftereffects", serialNumber: "asiicnbz9bj9221"}],
+        { name: "lightroom", serialNumber: "difjso2019jfzoi" },
+        { name: "photoshop", serialNumber: "sdifhjb932jzcv9" },
+        { name: "aftereffects", serialNumber: "asiicnbz9bj9221" }],
 
     "client3": [
-        { name: "duck", serialNumber: "ijzfdbijzdfvdfbj1"}]
+        { name: "ai face recognition", serialNumber: "ijzfdbijzdfvdfbj1" }]
 };
 
 
@@ -51,7 +51,7 @@ clientSelect.addEventListener("change", function () {
                         Edit ${software.name}'s permission to ${selectedClient} access
 
                         </br><a href = #>Disable access</a>
-                        </br><label>Serial number: </label>
+                        </br><label>Serial number: ${software.serialNumber}</label>
 
                         </td>
                     `;
@@ -62,6 +62,7 @@ clientSelect.addEventListener("change", function () {
         tbody.appendChild(row);
         tbody.appendChild(rowEdit);
     });
+
     softwareTable.style.display = "table";
 });
 

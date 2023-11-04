@@ -69,3 +69,22 @@ body{
     height: 50vh;
     border: 1px solid black;
 }
+.tableWrapper{
+    height: 50vh;
+    border: 1px solid black;
+    background: rgb(104, 215, 255);
+}
+.tabled{
+    background: white;
+}
+
+select{
+    padding: 5px;
+}
+
+li a{
+    text-decoration: none;
+}
+ul li a:hover{
+    color:red;
+}

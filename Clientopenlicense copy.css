@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+    background-color: #2E7D32;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nameOfWebsite {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  #navOptions a {
+    text-decoration: none;
+  }
+  
+  #navOptions button {
+    background-color: #64CCC5;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #navOptions button:hover {
+    background-color: #3A9B98;
+  }
+  
+  #content {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tableTitle h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tableDiv {
+    padding: 20px;
+  }
+  
+  .licenseTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .licenseTable th,
+  .licenseTable td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .availableLiscences .tableRow:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+
+
+#navOptions p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 20px;
+    transition: color 0.3s;
+  }
+  
+  #navOptions p:hover {
+    color: #64CCC5;
+  }

@@ -28,6 +28,7 @@ const softwareData = {
 softwareSelect.addEventListener("change", function () {
 
     document.getElementById("serial_generation").style = "display: on;";
+    document.getElementById("serial_locking").style = "display: on;";
 
     const selectedSoftware = softwareSelect.value;
 
@@ -59,7 +60,6 @@ softwareSelect.addEventListener("change", function () {
                     `;
         rowEdit.style = "display: none;";
         rowEdit.id = client.name;
-
 
         tbody.appendChild(row);
         tbody.appendChild(rowEdit);
@@ -102,3 +102,4 @@ function generateSerialNumber(){
     ${serial}
     `;  
 }
+

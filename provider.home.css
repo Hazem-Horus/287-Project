@@ -38,6 +38,8 @@
     padding-inline: 50px;
     background-color: rgb(123, 221, 251);
     height:500px;
+    display:grid;
+    grid-template-columns: auto auto;
 }
 a{
     display:block;
@@ -62,4 +64,14 @@ button{
 button:hover{
     letter-spacing: 0.1em;
     background: var(--green1);
+}
+.arcP {
+    width: auto;
+    padding: 10px;
+    margin: 50px;
+    align-items: absolute;
+    text-align: center;
+    
+    border-radius: 20px;
+    background-color: rgb(37, 193, 250);
 }

@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>Renting license</title>
+    <title>Software License Manager</title>
 </head>
 <body>
     <div id="navbar">
-        <p class="nameOfWebsite">Renting license</p>
+        <div class="logo">
+            <p>ULicense: Software License Manager</p>
+        </div>
         <div id="navOptions">
             <a href="clientOwnedLicenses.html">
-                <p>My licenses</p>
+                <button>My Licenses</button>
             </a>
             <a href="clientOpenLicenses.html">
-                <p>Rent new lisence</p>
+                <button id="rent-button">Rent New License</button>
             </a>
-            <a href="InfoClient.html">
-                <p>My profile</p>
+            <a href="myProfile.html">
+                <button>My Profile</button>
             </a>
             <a href="loginTwo.html">
-                <p>Logout</p>
+                <button id="logout-button">Logout</button>
             </a>
         </div>
     </div>
 
     <div id="content">
         <div class="tableTitle">
-            <h2>My licenses</h2>
+            <h2>My Licenses</h2>
         </div>
         <div class="tableDiv">
-        <table class="licenseTable">
-            <tr>
-                <th>License</th>
-                <th>Provider</th>
-                <th>Remaining days</th>
-                <th>Cancel license</th>
-            </tr>
+            <table class="licenseTable">
+                <tr>
+                    <th>License</th>
+                    <th>Provider</th>
+                    <th>Remaining Days</th>
+                    <th>Action</th>
+                </tr>
 
-            <div class="availableLiscences">
-                <tr class="tableRow">
-                    <td>465287931</td>
-                    <td>Keygen</td>
-                    <td>22 day(s)</td>
-                    <td><button type="submit">Cancel</button></td>
-                </tr>
-                <tr class="tableRow">
-                    <td>1829134576</td>
-                    <td>Serialio</td>
-                    <td>27 day(s)</td>
-                    <td><button type="submit">Cancel</button></td>
-                </tr>
-                <tr class="tableRow">
-                    <td>357692418</td>
-                    <td>Serial Key Generator</td>
-                    <td>15 day(s)</td>
-                    <td><button type="submit">Cancel</button></td>
-                </tr>
-                <tr class="tableRow">
-                    <td>283745619</td>
-                    <td>Serials.ws</td>
-                    <td>10 day(s)</td>
-                    <td><button type="submit">Cancel</button></td>
-                </tr>
-            </div>
-        </table>
+                <div class="availableLicenses">
+                    <tr class="tableRow">
+                        <td>465287931</td>
+                        <td>Keygen</td>
+                        <td>22 days</td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>1829134576</td>
+                        <td>Serialio</td>
+                        <td>27 days</td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>357692418</td>
+                        <td>Serial Key Generator</td>
+                        <td>15 days</td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>283745619</td>
+                        <td>Serials.ws</td>
+                        <td>10 days</td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+                </div>
+            </table>
         </div>
     </div>
-
-
 </body>
 </html>
+

@@ -9,5 +9,5 @@ function signIn(){
     }
     else if(client_check.checked){
         console.log("hello");
-        window.location.assign("InfoClient.html");
+        window.location.assign("clientOwnedLicenses.html");
     }}

@@ -2,97 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="myProfile.css" />
-  </head>
-  <div id="navbar">
-  <header>
-    <p class="nameOfWebsite">Renting license</p>
-    <div id="navOptions">
-        <a href="clientOwnedLicenses.html">
-            <p>My licenses</p>
-        </a>
-        <a href="clientOpenLicenses.html">
-            <p>Rent new lisence</p>
-        </a>
-        <a href="InfoClient.html">
-            <p>My profile</p>
-        </a>
-        <a href="loginTwo.html">
-            <p>Logout</p>
-        </a>
+    <title>User Profile</title>
+</head>
+<body>
+    <div id="navbar">
+        <p class="nameOfWebsite"> ULicense: <br/> Software License Manager</p>
+        <div id="navOptions">
+            <a href="clientOwnedLicenses.html">
+                <p>My Licenses</p>
+            </a>
+            <a href="clientOpenLicenses.html">
+                <p>Rent New Licenses</p>
+            </a>
+            <a href="myProfile.html">
+                <p>My Profile</p>
+            </a>
+            <a href="loginTwo.html">
+                <p>Logout</p>
+            </a>
+        </div>
     </div>
-  </header>
-</div>
-  <body>
+
     <h1>User Profile</h1>
-    <h2>serial number:465287931</h2>
+    <h2>Serial Number: 465287931</h2>
     <div class="btn-header">
-      <button class="btn-head">Edit Account</button>
-      <button class="btn-head">delete Account</button>
+      <button class="btn-head"><a href="InfoClient.html">Edit Account</a></button>
+      <button class="btn-head">Delete Account</button>
     </div>
     <table>
-      <tr>
-        <th>software name</th>
-        <th>purchase date</th>
-        <th>expire date</th>
-      </tr>
-      <tr>
-        <td>hello</td>
-        <td>2022/8/12</td>
-        <td>2023/10/12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>hello</td>
-        <td>2022/8/12</td>
-        <td>2023/10/12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>hello</td>
-        <td>2022/8/12</td>
-        <td>2023/10/12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>hello</td>
-        <td>2022/8/12</td>
-        <td>2023/10/12</td>
-        <td></td>
-      </tr>
+        <tr>
+            <th>Software Name</th>
+            <th>Purchase Date</th>
+            <th>Expiry Date</th>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>2022/8/12</td>
+            <td>2023/10/12</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>2022/8/12</td>
+            <td>2023/10/12</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>2022/8/12</td>
+            <td>2023/10/12</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>2022/8/12</td>
+            <td>2023/10/12</td>
+        </tr>
     </table>
-    <div class="new lics btn">
-    <button>Add new licenses</button>
-
-    <div class="input-box">
-      <input
-        type="text"
-        id="serialnumber"
-        placeholder="Serial Number"
-        required
-      />
-    </div>
-    <div class="input-box">
-      <input type="text"
-       id="purchase date" 
-       placeholder="Purchase Date"
-        required />
-    </div>
-    <div class="input-box">
-      <input type="text"
-       id="expire date"
-        placeholder="Expire Date"
-         required />
-    </div>
+    <div class="new-licenses btn">
+        <button>Add New Licenses</button>
+        <div class="input-box">
+            <input type="text" id="serialnumber" placeholder="Serial Number" required />
+        </div>
+        <div class="input-box">
+            <input type="text" id="purchase-date" placeholder="Purchase Date" required />
+        </div>
+        <div class="input-box">
+            <input type="text" id="expire-date" placeholder="Expiry Date" required />
+        </div>
     </div>
     <div class="subscribe">
-      <button>subscribe</button>
-      <p>OR</p>
-      <button>Renew subscribe</button>
-      <button>cancel subscribe</button>
+        <button>Subscribe</button>
+        <p>OR</p>
+        <button>Renew Subscription</button>
+        <button>Cancel Subscription</button>
     </div>
-  </body>
+</body>
 </html>

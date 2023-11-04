@@ -80,3 +80,22 @@ function displayClient(cl) {
         v.classList.add("selected");
     }
 }
+
+function generateSerialNumber(){
+    const labelS = document.getElementById("serial_number");
+    let serial = "";
+    for(i = 0; i < 10; i++){
+
+        let k = Math.floor(Math.random() * 74) + 48;
+        while(k > 90 && k < 97){
+            k = Math.floor(Math.random() * 74) + 48;
+        }
+        let j = String.fromCharCode(k);
+        serial += j;
+        console.log(j);
+    }
+    console.log(serial);
+    labelS.innerHTML.appendChild = `
+    ${serial}
+    `;  
+}

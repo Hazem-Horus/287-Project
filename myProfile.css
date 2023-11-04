@@ -5,6 +5,12 @@
   padding: 10px;
 }
 
+#navOptions a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
 .btn-header {
   text-align: end;
 }

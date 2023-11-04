@@ -1,5 +1,5 @@
 :root{
-    --green1 : rgb(0, 255, 0);
+    --green1 : rgb(123, 237, 123);
 }
 *{
     box-sizing: border-box;
@@ -25,6 +25,7 @@
 .menu{
     color:white;
     background-color: var(--green1);
+    border-radius: 20px;
 }
 .article1{
     padding-block: 100px;

@@ -11,33 +11,72 @@ let client2 = new client("marge", "marge233@outlook.com");
 const softwareSelect = document.getElementById("softwareSelect");
 const clientTable = document.getElementById("clientTable");
 const softwareData = {
-    "software1": [{ name: "john", email: "john2@hotmail.com" }],
-    "software2": [{ name: "marge", email: "marge233@hotmail.com" },{ name: "john", email: "john2@hotmail.com" },{name: "steven", email: "steven001@gmail.com"}],
-    "software3": [{ name: "duck", email: "ducky@hotmail.com" }]
+    "software1": [
+        { name: "john", email: "john2@hotmail.com", serialNumber : "19231jgnbvi219"}],
+
+    "software2": [
+        { name: "marge", email: "marge233@hotmail.com", serialNumber: "difjso2019jfzoi"},
+        { name: "john", email: "john2@hotmail.com", serialNumber: "sdifhjb932jzcv9"},
+        { name: "steven", email: "steven001@gmail.com", serialNumber: "asiicnbz9bj9221"}],
+
+    "software3": [
+        { name: "duck", email: "ducky@hotmail.com", serialNumber: "ijzfdbijzdfvdfbj1"}]
+
 };
 
 
 softwareSelect.addEventListener("change", function () {
+
+    document.getElementById("serial_generation").style = "display: on;";
+
     const selectedSoftware = softwareSelect.value;
 
     clientTable.style.display = "table";
 
     const clients = softwareData[selectedSoftware];
+
     const tbody = clientTable.querySelector("tbody");
     tbody.innerHTML = "";
 
     clients.forEach((client) => {
         const row = document.createElement("tr");
+        const rowEdit = document.createElement("tr");
+
         row.innerHTML = `
                         <td>${client.name}</td>
                         <td>${client.email}</td>
-                        <td><a href = # onclick=displayClient(${client})>Edit</a></td>
+                        <td><a href = # onclick=displayClient(${client.name}) class = "selected">Edit</a></td>
                     `;
+
+        rowEdit.innerHTML = `
+                        <td colspan = "3">
+                        Edit ${client.name}'s permission to ${selectedSoftware} access
+
+                        </br><a href = #>Disable access</a>
+                        </br><label>Serial number: </label>
+
+                        </td>
+                    `;
+        rowEdit.style = "display: none;";
+        rowEdit.id = client.name;
+
+
         tbody.appendChild(row);
+        tbody.appendChild(rowEdit);
     });
-
-    
-
-
     clientTable.style.display = "table";
 });
+
+
+function displayClient(cl) {
+    console.log(cl.id);
+    let v = document.getElementById(cl.id);
+    if (v.classList.contains("selected")) {
+        v.classList.remove("selected");
+        v.style = "display:none;";
+    }
+    else {
+        v.style = "display:on;";
+        v.classList.add("selected");
+    }
+}

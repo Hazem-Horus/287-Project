@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="provider.product.css">
 </head>
 
-<body>
+<body class = "clients">
     <provider-header></provider-header>
     <label for="softwareSelect">Select Software:</label>
     <select id="softwareSelect">
@@ -15,19 +15,33 @@
         <option value="software3">Software 3</option>
     </select>
 
-    <table id="clientTable" style="display:none;">
-        <thead>
-            <tr>
-                <th class = "name">Client Name</th>
-                <th class = "email">Client email</th>
-                <th class = "permission">Manage client permission</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+
+    <div id = "clients">
+        <h3>Clients</h3>
+        <table id="clientTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th class="name">Client Name</th>
+                    <th class="email">Client email</th>
+                    <th class="permission">Manage client permission</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="serial_generation" style="display:none;">
+
+        <h3>Add clients to product</h3>
+        <input type="text"> Client</input></br>
+        <input type="text"> Product</input></br>
+        <label id="serial_number">SerialNumber: </label></br>
+        <button>Generate Serial Number</button>
+    </div>
+
     <script src="provider.products.js"></script>
     <script src="provider.elements.js"></script>
-</body>
+    </body>
 
 </html>

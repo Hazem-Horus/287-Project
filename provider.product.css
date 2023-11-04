@@ -17,6 +17,10 @@ table{
     border:1px solid black;
     width: 50%;
 }
+
+body{
+    height: 100%;
+}
 .permission{
     width: 15%;
 }
@@ -28,7 +32,7 @@ table{
 }
 
 :root{
-    --green1 : rgb(0, 255, 0);
+    --green1 : rgb(123, 237, 123);
 }
 
 .nav-menu {
@@ -53,9 +57,15 @@ table{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-radius: 20px;
 }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.clients{
+    height: 50vh;
+    border: 1px solid black;
 }

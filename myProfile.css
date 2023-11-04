@@ -1,0 +1,16 @@
+
+#navbar {
+  background-color: rgb(123, 237, 123);
+  color: #fff;
+  padding: 10px;
+}
+
+.btn-header {
+  text-align: end;
+}
+button {
+  border-radius: 50px;
+  background-color: rgb(123, 237, 123);
+  margin: 7px;
+  padding: 10px;
+}

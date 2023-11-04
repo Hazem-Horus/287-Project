@@ -65,7 +65,7 @@ body{
     padding: 0;
 }
 
-.clients{
+.clientTable{
     height: 50vh;
     border: 1px solid black;
 }

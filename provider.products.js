@@ -12,15 +12,15 @@ const softwareSelect = document.getElementById("softwareSelect");
 const clientTable = document.getElementById("clientTable");
 const softwareData = {
     "software1": [
-        { name: "john", email: "john2@hotmail.com", serialNumber : "19231jgnbvi219"}],
+        { name: "john", email: "john2@hotmail.com", serialNumber : "19231ji1221219"}],
 
     "software2": [
-        { name: "marge", email: "marge233@hotmail.com", serialNumber: "difjso2019jfzoi"},
-        { name: "john", email: "john2@hotmail.com", serialNumber: "sdifhjb932jzcv9"},
+        { name: "marge", email: "marge233@hotmail.com", serialNumber: "difjso9jfzoi"},
+        { name: "john", email: "john2@hotmail.com", serialNumber: "sdifhjb932v9"},
         { name: "steven", email: "steven001@gmail.com", serialNumber: "asiicnbz9bj9221"}],
 
     "software3": [
-        { name: "duck", email: "ducky@hotmail.com", serialNumber: "ijzfdbijzdfvdfbj1"}]
+        { name: "duck", email: "ducky@hotmail.com", serialNumber: "ijzfdbijzfbj1"}]
 
 };
 
@@ -53,7 +53,7 @@ softwareSelect.addEventListener("change", function () {
                         Edit ${client.name}'s permission to ${selectedSoftware} access
 
                         </br><a href = #>Disable access</a>
-                        </br><label>Serial number: </label>
+                        </br><label>Serial number: ${client.serialNumber}</label>
 
                         </td>
                     `;
@@ -64,7 +64,10 @@ softwareSelect.addEventListener("change", function () {
         tbody.appendChild(row);
         tbody.appendChild(rowEdit);
     });
+
     clientTable.style.display = "table";
+
+    document.getElementById("softwareName").innerHTML = selectedSoftware;
 });
 
 
@@ -84,7 +87,7 @@ function displayClient(cl) {
 function generateSerialNumber(){
     const labelS = document.getElementById("serial_number");
     let serial = "";
-    for(i = 0; i < 10; i++){
+    for(i = 0; i < 12; i++){
 
         let k = Math.floor(Math.random() * 74) + 48;
         while(k > 90 && k < 97){
@@ -95,7 +98,7 @@ function generateSerialNumber(){
         console.log(j);
     }
     console.log(serial);
-    labelS.innerHTML.appendChild = `
+    labelS.innerHTML = `
     ${serial}
     `;  
 }
